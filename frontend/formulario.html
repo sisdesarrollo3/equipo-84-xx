@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    aca se recibiran los datos para el back con la base de datos
+
+    <a href="index.html">IR AL INDEX</a>
+
+    <p>Este es una etiqueta para un parrafo de una sola linea <br> si quiere otra linea aplique br</p> 
+
+    <pre>Este es una etiqueta para un parrafo de varias lineas respeta sus ideas
+        sola linea si quiere 
+                otra linea aplique </pre> 
+    
+
+    <div>
+      <form action="#">
+        <div>
+            <label for="">NOMBRE:</label>
+            <input class="form-control form-control-lg" type="text" placeholder="Ingrese su Nombre completo" aria-label=".form-control-lg example">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+              <label for="fecha" class="form-label">Fecha nacimiento</label>
+              <input type="date" class="form-control" id="fecha">
+            </div>
+          <div>
+        <div>
+            <label for="">EDAD:</label>
+            <input class="form-control form-control-lg" type="number" placeholder="Ingrese su edad">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Diagnostico</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+        </div>
+
+        <label for="#">LISTA DE DEPORTES GUSTO</label>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              futbool
+            </label>
+          </div>
+          
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              voleibol
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Parques
+            </label>
+          </div>
+
+          <BR><BR>
+
+          <label for="#">GENERO</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gen_id" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Hombre
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gen_id" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Mujer
+            </label>
+          </div>          
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gen_id" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              LGTBI
+            </label>
+          </div>
+          <BR><BR>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>--Seleccionar--</option>
+            <option value="1">Manizales</option>
+            <option value="2">Bogotá</option>
+            <option value="3">Medllín</option>
+          </select>
+          
+          <button type="button" class="btn btn-success">Success</button>
+          
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-3">ENVIAR DATOS DEL FORMULARIO</button>
+            </div>
+
+      </form>
+    </div>
+
+</body>
+</html>
