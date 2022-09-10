@@ -1,0 +1,69 @@
+﻿@page
+@model Proyectos.App.Presentacion.Pages.Formadores.ListModel
+@{
+   //var searchString = Model.searchString; 
+   ViewData["Title"] = "Lista de Formadores";
+}
+
+<div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2><div class="text-info">Lista de Formadores</h2>
+            </div>
+            <div class="col-sm-6">
+                 <a class="btn btn-primary btn-sm" asp-page="./Crear">
+                        Crear Formador
+                 </a>
+            </div>            
+        </div>    
+    </div>
+    <div class="card-body">
+        @if (Model.formadores.Count() > 0) { 
+            <br /><br />
+            <table class="table table-striped border">
+                <tr class="table-secondary">
+                    <th>@Html.DisplayNameFor(m => m.formadores.First().id)</th>
+                    <th>@Html.DisplayNameFor(m => m.formadores.First().identificacion)</th>
+                    <th>@Html.DisplayNameFor(m => m.formadores.First().nombre)</th>
+                    <th>@Html.DisplayNameFor(m => m.formadores.First().mail)</th>
+                    <th>NUMERO CELULAR</th>
+                    <th>@Html.DisplayNameFor(m => m.formadores.First().vigente)</th>
+                    <th>ACCIONES</th>
+                </tr>
+                @foreach (var item in Model.formadores)  {
+                <tr>
+                    <td>@Html.DisplayFor(m => item.id)</td>
+                    <td>@Html.DisplayFor(m => item.identificacion)</td>
+                    <td>@Html.DisplayFor(m => item.nombre)</td>
+                    <td>@Html.DisplayFor(m => item.mail)</td>
+                    <td>@item.movil</td>
+                    <td>@Html.DisplayFor(m => item.vigente)</td>
+                    <td>
+                        <a class="btn btn-primary btn-sm" asp-page="./Details" asp-route-formadorId="@item.id">
+                            Detalle</a>
+                    </td>
+
+                    <td>
+                        <a class="btn btn-success btn-sm" asp-page="./Edit" asp-route-formadorId="@item.id">
+                            Editar
+                        </a>
+                    </td> 
+
+                    <td>
+                        <a class="btn btn-danger btn-sm" asp-page="./Delete" asp-route-formadorId="@item.id">
+                            Eliminar
+                        </a>
+                    </td> 
+                </tr>    
+            }
+            </table>
+        }else{
+            <p>No hay Formadores disponibles</p>
+        }
+    </div>
+</div>
+
+
+
+
