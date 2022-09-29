@@ -40,12 +40,26 @@ namespace Proyectos.App.Persistencia.AppRepositorios
         Equipo UpdateEquipo(Equipo equipo);
         void DeleteEquipo(int idEquipo); 
 
-        //contratos o firmas para los metodos Equipo        
-        EstadoProyecto AddEstadoProyecto(EstadoProyecto estadoProyecto);
-        IEnumerable<EstadoProyecto> GetAllEstadoProyectos(string? searchString);         
-        EstadoProyecto GetEstadoProyecto(int? idEstadoProyecto);
-        EstadoProyecto UpdateEstadoProyecto(EstadoProyecto estadoProyecto);
-        void DeleteEstadoProyecto(int idEstadoProyecto); 
+        //contratos o firmas para los metodos Estado Proyectos        
+        EstadoProyecto AddEstadoProyecto(EstadoProyecto estadoProyecto);  //INSERT EN DB
+        IEnumerable<EstadoProyecto> GetAllEstadoProyectos(string? searchString);  //SELECT    
+        EstadoProyecto GetEstadoProyecto(int? idEstadoProyecto);  //SELECT
+        EstadoProyecto UpdateEstadoProyecto(EstadoProyecto estadoProyecto);  //UPDATE 
+        void DeleteEstadoProyecto(int idEstadoProyecto);   //DELETE EN LA BD
+
+         //contratos o firmas para los metodos Estado Proyectos        
+        EstadoTarea AddEstadoTarea(EstadoTarea estadoTarea);  //INSERT EN DB
+        IEnumerable<EstadoTarea> GetAllEstadoTareas(string? searchString);  //SELECT    
+        EstadoTarea GetEstadoTarea(int? idEstadoTarea);  //SELECT
+        EstadoTarea UpdateEstadoTarea(EstadoTarea estadoTarea);  //UPDATE 
+        void DeleteEstadoTarea(int idEstadoTarea);   //DELETE EN LA BD
+
+         //contratos o firmas para los metodos Estado Proyectos        
+        Rol AddRol(Rol rol);  //INSERT EN DB
+        IEnumerable<Rol> GetAllRoles(string? searchString);  //SELECT    
+        Rol GetRol(int? idRol);  //SELECT
+        Rol UpdateRol(Rol rol);  //UPDATE 
+        void DeleteRol(int idRol);   //DELETE EN LA BD
 
     } //fin IRepositorios
 }

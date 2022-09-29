@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\equipo-27-xx\\Proyectos.App\\Proyectos.App.Presentacion\\Proyectos.App.Presentacion.csproj": {}
+    "C:\\equipo-84-xx\\Proyectos.App\\Proyectos.App.Presentacion\\Proyectos.App.Presentacion.csproj": {}
   },
   "projects": {
-    "C:\\equipo-27-xx\\Proyectos.App\\Proyectos.App.Dominio\\Proyectos.App.Dominio.csproj": {
+    "C:\\equipo-84-xx\\Proyectos.App\\Proyectos.App.Dominio\\Proyectos.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\equipo-27-xx\\Proyectos.App\\Proyectos.App.Dominio\\Proyectos.App.Dominio.csproj",
+        "projectUniqueName": "C:\\equipo-84-xx\\Proyectos.App\\Proyectos.App.Dominio\\Proyectos.App.Dominio.csproj",
         "projectName": "Proyectos.App.Dominio",
-        "projectPath": "C:\\equipo-27-xx\\Proyectos.App\\Proyectos.App.Dominio\\Proyectos.App.Dominio.csproj",
+        "projectPath": "C:\\equipo-84-xx\\Proyectos.App\\Proyectos.App.Dominio\\Proyectos.App.Dominio.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\equipo-27-xx\\Proyectos.App\\Proyectos.App.Dominio\\obj\\",
+        "outputPath": "C:\\equipo-84-xx\\Proyectos.App\\Proyectos.App.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "C:\\equipo-27-xx\\Proyectos.App\\Proyectos.App.Persistencia\\Proyectos.App.Persistencia.csproj": {
+    "C:\\equipo-84-xx\\Proyectos.App\\Proyectos.App.Persistencia\\Proyectos.App.Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\equipo-27-xx\\Proyectos.App\\Proyectos.App.Persistencia\\Proyectos.App.Persistencia.csproj",
+        "projectUniqueName": "C:\\equipo-84-xx\\Proyectos.App\\Proyectos.App.Persistencia\\Proyectos.App.Persistencia.csproj",
         "projectName": "Proyectos.App.Persistencia",
-        "projectPath": "C:\\equipo-27-xx\\Proyectos.App\\Proyectos.App.Persistencia\\Proyectos.App.Persistencia.csproj",
+        "projectPath": "C:\\equipo-84-xx\\Proyectos.App\\Proyectos.App.Persistencia\\Proyectos.App.Persistencia.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\equipo-27-xx\\Proyectos.App\\Proyectos.App.Persistencia\\obj\\",
+        "outputPath": "C:\\equipo-84-xx\\Proyectos.App\\Proyectos.App.Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +83,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\equipo-27-xx\\Proyectos.App\\Proyectos.App.Dominio\\Proyectos.App.Dominio.csproj": {
-                "projectPath": "C:\\equipo-27-xx\\Proyectos.App\\Proyectos.App.Dominio\\Proyectos.App.Dominio.csproj"
+              "C:\\equipo-84-xx\\Proyectos.App\\Proyectos.App.Dominio\\Proyectos.App.Dominio.csproj": {
+                "projectPath": "C:\\equipo-84-xx\\Proyectos.App\\Proyectos.App.Dominio\\Proyectos.App.Dominio.csproj"
               }
             }
           }
@@ -140,14 +140,14 @@
         }
       }
     },
-    "C:\\equipo-27-xx\\Proyectos.App\\Proyectos.App.Presentacion\\Proyectos.App.Presentacion.csproj": {
+    "C:\\equipo-84-xx\\Proyectos.App\\Proyectos.App.Presentacion\\Proyectos.App.Presentacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\equipo-27-xx\\Proyectos.App\\Proyectos.App.Presentacion\\Proyectos.App.Presentacion.csproj",
+        "projectUniqueName": "C:\\equipo-84-xx\\Proyectos.App\\Proyectos.App.Presentacion\\Proyectos.App.Presentacion.csproj",
         "projectName": "Proyectos.App.Presentacion",
-        "projectPath": "C:\\equipo-27-xx\\Proyectos.App\\Proyectos.App.Presentacion\\Proyectos.App.Presentacion.csproj",
+        "projectPath": "C:\\equipo-84-xx\\Proyectos.App\\Proyectos.App.Presentacion\\Proyectos.App.Presentacion.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\equipo-27-xx\\Proyectos.App\\Proyectos.App.Presentacion\\obj\\",
+        "outputPath": "C:\\equipo-84-xx\\Proyectos.App\\Proyectos.App.Presentacion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -164,11 +164,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\equipo-27-xx\\Proyectos.App\\Proyectos.App.Dominio\\Proyectos.App.Dominio.csproj": {
-                "projectPath": "C:\\equipo-27-xx\\Proyectos.App\\Proyectos.App.Dominio\\Proyectos.App.Dominio.csproj"
+              "C:\\equipo-84-xx\\Proyectos.App\\Proyectos.App.Dominio\\Proyectos.App.Dominio.csproj": {
+                "projectPath": "C:\\equipo-84-xx\\Proyectos.App\\Proyectos.App.Dominio\\Proyectos.App.Dominio.csproj"
               },
-              "C:\\equipo-27-xx\\Proyectos.App\\Proyectos.App.Persistencia\\Proyectos.App.Persistencia.csproj": {
-                "projectPath": "C:\\equipo-27-xx\\Proyectos.App\\Proyectos.App.Persistencia\\Proyectos.App.Persistencia.csproj"
+              "C:\\equipo-84-xx\\Proyectos.App\\Proyectos.App.Persistencia\\Proyectos.App.Persistencia.csproj": {
+                "projectPath": "C:\\equipo-84-xx\\Proyectos.App\\Proyectos.App.Persistencia\\Proyectos.App.Persistencia.csproj"
               }
             }
           }

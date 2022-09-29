@@ -85,6 +85,22 @@ namespace Proyectos.App.Persistencia.Migrations
                     b.ToTable("estadoProyecto");
                 });
 
+            modelBuilder.Entity("Proyectos.App.Dominio.Entidades.EstadoTarea", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("estadoTarea");
+                });
+
             modelBuilder.Entity("Proyectos.App.Dominio.Entidades.Estudiante", b =>
                 {
                     b.Property<int>("id")
@@ -145,6 +161,29 @@ namespace Proyectos.App.Persistencia.Migrations
                     b.HasKey("id");
 
                     b.ToTable("formador");
+                });
+
+            modelBuilder.Entity("Proyectos.App.Dominio.Entidades.Rol", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("descripcion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("vigente")
+                        .HasColumnType("bit");
+
+                    b.HasKey("id");
+
+                    b.ToTable("rol");
                 });
 
             modelBuilder.Entity("Proyectos.App.Dominio.Entidades.Tutor", b =>

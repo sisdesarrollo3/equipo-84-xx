@@ -44,6 +44,19 @@ namespace Proyectos.App.Persistencia.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "estadoTarea",
+                columns: table => new
+                {
+                    id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    nombre = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_estadoTarea", x => x.id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "estudiante",
                 columns: table => new
                 {
@@ -78,6 +91,21 @@ namespace Proyectos.App.Persistencia.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "rol",
+                columns: table => new
+                {
+                    id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    descripcion = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    vigente = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_rol", x => x.id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "tutor",
                 columns: table => new
                 {
@@ -104,10 +132,16 @@ namespace Proyectos.App.Persistencia.Migrations
                 name: "estadoProyecto");
 
             migrationBuilder.DropTable(
+                name: "estadoTarea");
+
+            migrationBuilder.DropTable(
                 name: "estudiante");
 
             migrationBuilder.DropTable(
                 name: "formador");
+
+            migrationBuilder.DropTable(
+                name: "rol");
 
             migrationBuilder.DropTable(
                 name: "tutor");

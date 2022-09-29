@@ -17,6 +17,8 @@ namespace Proyectos.App.Persistencia
         public DbSet<Estudiante> estudiante{get; set;}
         public DbSet<Equipo> equipo{get; set;}
         public DbSet<EstadoProyecto> estadoProyecto{get; set;}
+        public DbSet<EstadoTarea> estadoTarea{get; set;}
+        public DbSet<Rol> rol{get; set;}
 
 
         //crear el deContext
@@ -25,7 +27,7 @@ namespace Proyectos.App.Persistencia
             if (!optionsBuilder.IsConfigured)
             {
             optionsBuilder
-           .UseSqlServer("Server=localhost; user id=sa; password=12345; Initial Catalog=BDFinalProyectos27;");            
+           .UseSqlServer("Server=localhost; user id=sa; password=12345; Initial Catalog=BDFinalProyectos84;");            
             }
         }      
 

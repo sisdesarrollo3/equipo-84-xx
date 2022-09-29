@@ -15,6 +15,8 @@ namespace Proyectos.App.Persistencia.AppRepositorios
        public IEnumerable<Estudiante> estudiantes {get; set;} 
        public IEnumerable<Equipo> equipos {get; set;} 
        public IEnumerable<EstadoProyecto> estadoProyectos {get; set;} 
+       public IEnumerable<EstadoTarea> estadoTareas {get; set;} 
+       public IEnumerable<Rol> roles {get; set;} 
 
        public Repositorios(AppContext appContext)
         {
@@ -302,6 +304,114 @@ namespace Proyectos.App.Persistencia.AppRepositorios
             var EstadoProyectoEncontrado = _appContext.estadoProyecto.FirstOrDefault(p => p.id == idEstadoProyecto);
             if (EstadoProyectoEncontrado != null){                
                 _appContext.estadoProyecto.Remove(EstadoProyectoEncontrado);
+                _appContext.SaveChanges();
+            }
+            return;
+        }
+
+        //repositorios de Estados tarea
+        EstadoTarea IRepositorios.AddEstadoTarea(EstadoTarea estadoTarea)
+        {
+        try
+         {
+            var EstadoTareaAdicionado = _appContext.estadoTarea.Add( estadoTarea );  //INSERT en la BD
+            _appContext.SaveChanges();                  
+            return EstadoTareaAdicionado.Entity;
+          }catch
+            {
+                throw;
+            }
+        }
+
+        IEnumerable<EstadoTarea> IRepositorios.GetAllEstadoTareas(string? searchString)
+        {
+            if (searchString == null)
+                estadoTareas = _appContext.estadoTarea;
+            else{
+                //busca coincidencias entre los registros y la cadena enviada
+                estadoTareas = _appContext.estadoTarea.Where(s => s.nombre.Contains(searchString));   
+                //busca solamente los que son exactamente igual a la cadena enviada 
+                //estadoTareas = _appContext.estadoTarea.Where(s => s.nombre.Equals(searchString));    
+            }
+            return estadoTareas;
+        }
+
+       EstadoTarea IRepositorios.GetEstadoTarea(int? idEstadoTarea)
+       {
+            return _appContext.estadoTarea.FirstOrDefault(p => p.id == idEstadoTarea);
+       }
+
+       EstadoTarea IRepositorios.UpdateEstadoTarea(EstadoTarea estadoTarea)
+        {    
+            var EstadoTareaEncontrado = _appContext.estadoTarea.FirstOrDefault(p => p.id == estadoTarea.id);
+            if (EstadoTareaEncontrado != null)
+            {
+                EstadoTareaEncontrado.nombre = estadoTarea.nombre;
+                _appContext.SaveChanges();
+            }
+            return EstadoTareaEncontrado;
+        }
+
+        void IRepositorios.DeleteEstadoTarea(int idEstadoTarea)
+        {   
+            var EstadoTareaEncontrado = _appContext.estadoTarea.FirstOrDefault(p => p.id == idEstadoTarea);
+            if (EstadoTareaEncontrado != null){                
+                _appContext.estadoTarea.Remove(EstadoTareaEncontrado);
+                _appContext.SaveChanges();
+            }
+            return;
+        }
+
+        //REPOSITORIOS PARA EL CRUD DEL ROL
+        Rol IRepositorios.AddRol(Rol rol)
+        {
+        try
+         {
+            var RolAdicionado = _appContext.rol.Add( rol );  //INSERT en la BD
+            _appContext.SaveChanges();                  
+            return RolAdicionado.Entity;
+          }catch
+            {
+                throw;
+            }
+        }
+
+        IEnumerable<Rol> IRepositorios.GetAllRoles(string? searchString)
+        {
+            if (searchString == null)
+                roles = _appContext.rol;
+            else{
+                //busca coincidencias entre los registros y la cadena enviada
+                roles = _appContext.rol.Where(s => s.nombre.Contains(searchString));   
+                //busca solamente los que son exactamente igual a la cadena enviada 
+                //roles = _appContext.rol.Where(s => s.identificacion.Equals(searchString));    
+            }
+            return roles;
+        }
+
+       Rol IRepositorios.GetRol(int? idRol)
+       {
+            return _appContext.rol.FirstOrDefault(p => p.id == idRol);
+       }
+
+       Rol IRepositorios.UpdateRol(Rol rol)
+        {    
+            var RolEncontrado = _appContext.rol.FirstOrDefault(p => p.id == rol.id);
+            if (RolEncontrado != null)
+            {
+                RolEncontrado.nombre          = rol.nombre;
+                RolEncontrado.descripcion     = rol.descripcion;
+                RolEncontrado.vigente         = rol.vigente;
+                _appContext.SaveChanges();
+            }
+            return RolEncontrado;
+        }
+
+        void IRepositorios.DeleteRol(int idRol)
+        {   
+            var RolEncontrado = _appContext.rol.FirstOrDefault(p => p.id == idRol);
+            if (RolEncontrado != null){                
+                _appContext.rol.Remove(RolEncontrado);
                 _appContext.SaveChanges();
             }
             return;
