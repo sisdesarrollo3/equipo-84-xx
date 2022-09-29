@@ -1,0 +1,85 @@
+﻿@page
+@model Proyectos.App.Presentacion.Pages.Equipos.DetailsModel
+@{
+    ViewData["Title"] = "Detalle Equipo";
+}
+
+<div class="card">
+    <div class="card-header">
+        <h2 class="text-info">Datos del  Equipo</h2>
+    </div>
+    <div class="card-body">
+        <form method="post">
+            <div asp-validation-sumary="ModelOnly" class="text-primary">
+                <div class="container" style="padding: 30px">
+                    <!-- se envía campo de la PK oculto -->
+                    <input type="hidden"  asp-for="Equipo.id" />
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-2"> 
+                                <label asp-for="Equipo.codigo"  class="text-primary"></label>
+                            </div>
+                            <div class="col-sm-3">
+                                @Model.Equipo.codigo;
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-2"> 
+                                <label asp-for="Equipo.nombre"  class=" text-primary"></label>
+                            </div>
+                            <div class="col-sm-6">
+                                @Model.Equipo.nombre
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-2"> 
+                                <label asp-for="Equipo.meet"  class=" text-primary"></label>
+                            </div>
+                            <div class="col-sm-6">
+                                @Model.Equipo.meet
+                            </div>
+                            <span asp-validation-for="Equipo.meet" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-2"> 
+                                <label asp-for="Equipo.whatsapp"  class=" text-primary"></label>
+                            </div>
+                            <div class="col-sm-3">
+                                @Model.Equipo.whatsapp
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-2"> 
+                                <label asp-for="Equipo.vigente"  class=" text-primary"></label>
+                            </div>
+                            <div class="col-sm-3">
+                                @Model.Equipo.vigente
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <a asp-page="List" class="btn btn-primary form-control">Volver a la Lista</a>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+                           

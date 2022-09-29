@@ -1,25 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 using Proyectos.App.Dominio.Entidades;
+using Proyectos.App.Persistencia.AppRepositorios;
+using Proyectos.App.Persistencia;
 
-namespace Proyectos.App.Presentacion.Formadores
+namespace Proyectos.App.Presentacion.Pages.Formadores
 {
     public class DetailsModel : PageModel
     {
+       private readonly IRepositorios _appContext;
+
         [BindProperty]
-        public Formador formador { get; set; }
-        public void OnGet()
+        public Formador formador  { get; set; } 
+
+        public DetailsModel()
+        {            
+            this._appContext = new Repositorios(new Proyectos.App.Persistencia.AppContext());
+        }
+     
+
+        //se ejecuta al presionar Editar en la lista
+        public IActionResult OnGet(int? formadorId)
         {
-            //cargar los datos del registro seleccionado en la tabla de listar
-          formador = new Formador{
-                id = 1, 
-                identificacion = "10266377",
-                nombre = "Jhon Jairo Orozco D.",
-                mail = "jorozco@ucaldas.edu.co",
-                movil = "319xxxxx",
-                vigente = true              
-          };
+            if (formadorId.HasValue)
+            {
+                formador = _appContext.GetFormador(formadorId.Value);
+            }
+            if (formador == null)
+            {
+                return RedirectToPage("./NotFound");
+            }
+            else
+                return Page();
+
         }
     }
 }

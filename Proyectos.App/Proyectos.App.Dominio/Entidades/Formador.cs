@@ -9,7 +9,7 @@ namespace Proyectos.App.Dominio.Entidades
         [Display(Name = "ID")]
         public int id { get; set; }
         [Required]        
-        [Display(Name = "Nro. Identficación")]
+        [Display(Name = "Nro. Identificación")]
         public string identificacion{ get; set; }
         [Required]        
         [Display(Name = "Nombre del Formador")]
@@ -20,7 +20,8 @@ namespace Proyectos.App.Dominio.Entidades
         [Required]        
         [Display(Name = "Celular")]
         public string movil{ get; set; }
-        public bool vigente{ get; set; }
+         [Display(Name = "Vigente")]
+         public bool vigente{ get; set; }
     }
 }
 

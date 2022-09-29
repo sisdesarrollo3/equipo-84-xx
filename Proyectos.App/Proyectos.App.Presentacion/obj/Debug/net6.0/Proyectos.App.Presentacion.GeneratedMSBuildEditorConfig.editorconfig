@@ -8,57 +8,117 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Proyectos.App.Presentacion
 build_property.RootNamespace = Proyectos.App.Presentacion
-build_property.ProjectDir = C:\equipo-84-xx\Proyectos.App\Proyectos.App.Presentacion\
+build_property.ProjectDir = C:\equipo-27-xx\Proyectos.App\Proyectos.App.Presentacion\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\equipo-84-xx\Proyectos.App\Proyectos.App.Presentacion
+build_property.MSBuildProjectDirectory = C:\equipo-27-xx\Proyectos.App\Proyectos.App.Presentacion
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/equipo-84-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Error.cshtml]
+[C:/equipo-27-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Equipos/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXF1aXBvc1xDcmVhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/equipo-27-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Equipos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXF1aXBvc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/equipo-27-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Equipos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXF1aXBvc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/equipo-27-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Equipos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXF1aXBvc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/equipo-27-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Equipos/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXF1aXBvc1xMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/equipo-27-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/equipo-84-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Formadores/Crear.cshtml]
+[C:/equipo-27-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Estudiantes/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXN0dWRpYW50ZXNcQ3JlYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/equipo-27-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Estudiantes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXN0dWRpYW50ZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/equipo-27-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Estudiantes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXN0dWRpYW50ZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/equipo-27-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Estudiantes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXN0dWRpYW50ZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/equipo-27-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Estudiantes/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXN0dWRpYW50ZXNcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/equipo-27-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Formadores/Crear.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybWFkb3Jlc1xDcmVhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/equipo-84-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Formadores/Delete.cshtml]
+[C:/equipo-27-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Formadores/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybWFkb3Jlc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/equipo-84-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Formadores/Details.cshtml]
+[C:/equipo-27-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Formadores/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybWFkb3Jlc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/equipo-84-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Formadores/Edit.cshtml]
+[C:/equipo-27-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Formadores/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybWFkb3Jlc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/equipo-84-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Formadores/List.cshtml]
+[C:/equipo-27-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Formadores/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybWFkb3Jlc1xMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/equipo-84-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Index.cshtml]
+[C:/equipo-27-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/equipo-84-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Privacy.cshtml]
+[C:/equipo-27-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/equipo-84-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/equipo-27-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/equipo-84-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/_ViewImports.cshtml]
+[C:/equipo-27-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Tutores/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHV0b3Jlc1xDcmVhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/equipo-27-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Tutores/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHV0b3Jlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/equipo-27-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Tutores/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHV0b3Jlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/equipo-27-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Tutores/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHV0b3Jlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/equipo-27-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Tutores/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHV0b3Jlc1xMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/equipo-27-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/equipo-84-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/_ViewStart.cshtml]
+[C:/equipo-27-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/equipo-84-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Shared/_Layout.cshtml]
+[C:/equipo-27-xx/Proyectos.App/Proyectos.App.Presentacion/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-c7ilwy41hl

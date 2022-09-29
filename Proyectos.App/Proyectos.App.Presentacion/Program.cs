@@ -1,4 +1,15 @@
+//importar paquetes
+//using Proyectos.App.Persistencia.AppRepositorios;
+//using Microsoft.EntityFrameworkCore;
+//using System;
+//using Proyectos.App.Persistencia.AppRepositorios;
+
 var builder = WebApplication.CreateBuilder(args);
+
+//builder.Services.AddScoped<IRepositorios, Repositorios>();
+//builder.Services.AddSingleton<Proyectos.App.Persistencia.AppContext>();
+
+//var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();

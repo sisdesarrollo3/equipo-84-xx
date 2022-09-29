@@ -1,7 +1,7 @@
 ﻿@page
-@model Proyectos.App.Presentacion.Formadores.DeleteModel
+@model Proyectos.App.Presentacion.Pages.Formadores.DeleteModel
 @{
-    ViewData["Title"] = "Elimianr Formador";
+    ViewData["Title"] = "Eliminar Formador";
 }
 
 <div class="card">
@@ -11,9 +11,9 @@
     <div class="card-body">
         <form method="post">
             <div asp-validation-sumary="ModelOnly" class="text-danger">
+                <!-- se envía campo de la PK oculto -->
+                <input type="hidden"  asp-for="formador.id" />
                 <div class="container" style="padding: 30px">
-                    <!-- se envía campo de la PK oculto -->
-                    <input type="hidden"  asp-for="formador.id" />
                     <div class="form-group">
                         <div class="row">
                             <div class="col-sm-2"> 
@@ -22,7 +22,6 @@
                             <div class="col-sm-1">
                                 <input asp-for="formador.id" class="form-control" value = "@Model.formador.id" disabled />
                             </div>
-                            <span asp-validation-for="formador.id" class="text-danger"></span>
                         </div>
                     </div>
                     <div class="form-group">
@@ -33,7 +32,6 @@
                             <div class="col-sm-3">
                                 <input asp-for="formador.identificacion" class="form-control" value = "@Model.formador.identificacion" disabled />
                             </div>
-                            <span asp-validation-for="formador.identificacion" class="text-danger"></span>
                         </div>
                     </div>
                     <div class="form-group">
@@ -44,7 +42,6 @@
                             <div class="col-sm-6">
                                 <input asp-for="formador.nombre" class="form-control" value = "@Model.formador.nombre" disabled />
                             </div>
-                            <span asp-validation-for="formador.nombre" class="text-danger"></span>
                         </div>
                     </div>
                     <div class="form-group">
@@ -55,7 +52,6 @@
                             <div class="col-sm-6">
                                 <input type="email" asp-for="formador.mail" class="form-control" value = "@Model.formador.mail" disabled />
                             </div>
-                            <span asp-validation-for="formador.mail" class="text-danger"></span>
                         </div>
                     </div>
                     <div class="form-group">
@@ -66,7 +62,6 @@
                             <div class="col-sm-3">
                                 <input asp-for="formador.movil" class="form-control" value = "@Model.formador.movil" disabled />
                             </div>
-                            <span asp-validation-for="formador.movil" class="text-danger"></span>
                         </div>
                     </div>
                     <div class="form-group">
