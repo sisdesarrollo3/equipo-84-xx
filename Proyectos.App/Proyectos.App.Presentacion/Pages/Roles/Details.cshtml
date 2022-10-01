@@ -13,55 +13,27 @@
             <div asp-validation-sumary="ModelOnly" class="text-primary">
                 <div class="container" style="padding: 30px">
                     <!-- se envía campo de la PK oculto -->
-                    <input type="hidden"  asp-for="formador.id" />
+                    <input type="hidden"  asp-for="Rol.id" />
+                   
                     <div class="form-group">
                         <div class="row">
                             <div class="col-sm-2"> 
-                                <label asp-for="formador.identificacion"  class="text-primary"></label>
-                            </div>
-                            <div class="col-sm-3">
-                                @Model.formador.identificacion;
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-sm-2"> 
-                                <label asp-for="formador.nombre"  class=" text-primary"></label>
+                                <label asp-for="Rol.nombre"  class=" text-primary"></label>
                             </div>
                             <div class="col-sm-6">
-                                @Model.formador.nombre
+                                @Model.Rol.nombre
                             </div>
                         </div>
                     </div>
+                    
+                    
                     <div class="form-group">
                         <div class="row">
                             <div class="col-sm-2"> 
-                                <label asp-for="formador.mail"  class=" text-primary"></label>
-                            </div>
-                            <div class="col-sm-6">
-                                @Model.formador.mail
-                            </div>
-                            <span asp-validation-for="formador.mail" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-sm-2"> 
-                                <label asp-for="formador.movil"  class=" text-primary"></label>
+                                <label asp-for="Rol.vigente"  class=" text-primary"></label>
                             </div>
                             <div class="col-sm-3">
-                                @Model.formador.movil
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-sm-2"> 
-                                <label asp-for="formador.vigente"  class=" text-primary"></label>
-                            </div>
-                            <div class="col-sm-3">
-                                @Model.formador.vigente
+                                @Model.Rol.vigente
                             </div>
                         </div>
                     </div>

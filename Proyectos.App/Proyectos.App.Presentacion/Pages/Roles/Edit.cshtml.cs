@@ -16,7 +16,7 @@ namespace Proyectos.App.Presentacion.Pages.Roles
        private readonly IRepositorios _appContext;
 
         [BindProperty]
-        public Rol formador  { get; set; } 
+        public Rol Rol  { get; set; } 
 
         public EditModel()
         {            
@@ -29,9 +29,9 @@ namespace Proyectos.App.Presentacion.Pages.Roles
         {
             if (rolId.HasValue)
             {
-                formador = _appContext.GetRol(rolId.Value);
+                Rol = _appContext.GetRol(rolId.Value);
             }
-            if (formador == null)
+            if (Rol == null)
             {
                 return RedirectToPage("./NotFound");
             }
@@ -46,9 +46,9 @@ namespace Proyectos.App.Presentacion.Pages.Roles
             {
                 return Page();
             }
-            if(formador.id > 0)
+            if(Rol.id > 0)
             {
-               formador = _appContext.UpdateRol(formador); 
+               Rol = _appContext.UpdateRol(Rol); 
             }
             return Redirect("List");
         }

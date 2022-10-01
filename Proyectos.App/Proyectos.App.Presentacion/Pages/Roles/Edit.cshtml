@@ -12,73 +12,43 @@
         <form method="post">
             <div asp-validation-sumary="ModelOnly" class="text-danger">
                 <!-- se envía campo de la PK oculto -->
-                <input type="hidden"  asp-for="formador.id" />
+                <input type="hidden"  asp-for="Rol.id" />
 
                 <div class="container" style="padding: 50px">
                     <div class="form-group">
                         <div class="row">
                             <div class="col-sm-2"> 
-                                <label asp-for="formador.id" class="text-primary"></label>
+                                <label asp-for="Rol.id" class="text-primary"></label>
                             </div>
                             <div class="col-sm-1">
-                                <input asp-for="formador.id" class="form-control" value="@Model.formador.id" disabled />
+                                <input asp-for="Rol.id" class="form-control" value="@Model.Rol.id" disabled />
                             </div>
-                            <span asp-validation-for="formador.id" class="text-danger"></span>
+                            <span asp-validation-for="Rol.id" class="text-danger"></span>
                         </div>
                     </div>
 
+                    
                     <div class="form-group">
                         <div class="row">
                             <div class="col-sm-2"> 
-                                <label asp-for="formador.identificacion" class="text-primary"></label>
-                            </div>
-                            <div class="col-sm-3">
-                                <input asp-for="formador.identificacion" class="form-control" value=@Model.formador.identificacion />
-                            </div>
-                            <span asp-validation-for="formador.identificacion" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-sm-2"> 
-                                <label asp-for="formador.nombre" class="text-primary"></label>
+                                <label asp-for="Rol.nombre" class="text-primary"></label>
                             </div>
                             <div class="col-sm-6">
-                                <input asp-for="formador.nombre" class="form-control" value=@Model.formador.nombre />
+                                <input asp-for="Rol.nombre" class="form-control" value=@Model.Rol.nombre />
                             </div>
-                            <span asp-validation-for="formador.nombre" class="text-danger"></span>
+                            <span asp-validation-for="Rol.nombre" class="text-danger"></span>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-sm-2"> 
-                                <label asp-for="formador.mail" class="text-primary"></label>
-                            </div>
-                            <div class="col-sm-6">
-                                <input asp-for="formador.mail" class="form-control" value=@Model.formador.mail />
-                            </div>
-                            <span asp-validation-for="formador.mail" class="text-danger"></span>
-                        </div>
-                    </div>
+                    
 
+                                        
                     <div class="form-group">
                         <div class="row">
                             <div class="col-sm-2"> 
-                                <label asp-for="formador.movil" class="text-primary"></label>
-                            </div>
-                            <div class="col-sm-3">
-                                <input asp-for="formador.movil" class="form-control" value=@Model.formador.movil />
-                            </div>
-                            <span asp-validation-for="formador.movil" class="text-danger"></span>
-                        </div>
-                    </div>                    
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-sm-2"> 
-                                <label asp-for="formador.vigente"  class=" text-primary"></label>
+                                <label asp-for="Rol.vigente"  class=" text-primary"></label>
                             </div>
                             <div class="col-sm-3">                               
-                                <input class="form-check-input" type="checkbox" asp-for="formador.vigente" value=@Model.formador.vigente />
+                                <input class="form-check-input" type="checkbox" asp-for="Rol.vigente" value=@Model.Rol.vigente />
                             </div>
                         </div>
                     </div>

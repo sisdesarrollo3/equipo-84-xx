@@ -5,32 +5,32 @@ using Proyectos.App.Dominio.Entidades;
 using Proyectos.App.Persistencia.AppRepositorios;
 using Proyectos.App.Persistencia;
 
-namespace Proyectos.App.Presentacion.Formadores
+namespace Proyectos.App.Presentacion.Roles
 {
     public class CrearModel : PageModel
     {
         private readonly IRepositorios _appContext;
         [BindProperty]
-        public Formador formador { get; set; }
+        public Rol Rol { get; set; }
 
         public CrearModel(){
-            //cargar desde la base de datos tabla formador
+            //cargar desde la base de datos tabla Rol
             this._appContext = new Repositorios(new Proyectos.App.Persistencia.AppContext());
             //cargarTemporales();
         }
        
 
-        public IActionResult OnGet(int? formadorId)
+        public IActionResult OnGet(int? RolId)
         {
-            if (formadorId.HasValue)
+            if (RolId.HasValue)
             {
-                formador = _appContext.GetFormador(formadorId.Value);
+                Rol = _appContext.GetRol(RolId.Value);
             }
             else
             {
-                formador = new Formador();
+                Rol = new Rol();
             }
-            if (formador == null)
+            if (Rol == null)
             {
                 return RedirectToPage("./NotFound");
             }
@@ -45,14 +45,14 @@ namespace Proyectos.App.Presentacion.Formadores
             {
                 return Page();
             }
-            if(formador.id > 0)
+            if(Rol.id > 0)
             {
-               formador = _appContext.UpdateFormador(formador);
+               Rol = _appContext.UpdateRol(Rol);
             }
             else
             {
-                //formador.vigente = true;
-               _appContext.AddFormador(formador);
+                //Rol.vigente = true;
+               _appContext.AddRol(Rol);
             }
             return Redirect("List");
             

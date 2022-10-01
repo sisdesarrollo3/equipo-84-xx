@@ -16,7 +16,7 @@ namespace Proyectos.App.Presentacion.Pages.Roles
        private readonly IRepositorios _appContext;
 
         [BindProperty]
-        public Rol formador  { get; set; } 
+        public Rol Rol  { get; set; } 
 
         public DeleteModel()
         {            
@@ -29,9 +29,9 @@ namespace Proyectos.App.Presentacion.Pages.Roles
         {
             if (rolId.HasValue)
             {
-                formador = _appContext.GetRol(rolId.Value);
+                Rol = _appContext.GetRol(rolId.Value);
             }
-            if (formador == null)
+            if (Rol == null)
             {
                 return RedirectToPage("./NotFound");
             }
@@ -42,9 +42,9 @@ namespace Proyectos.App.Presentacion.Pages.Roles
         //se ejecuta al presionar Eliminar en el formulario
         public IActionResult OnPost()
         {
-            if(formador.id > 0)
+            if(Rol.id > 0)
             {     
-               _appContext.DeleteRol(formador.id);           
+               _appContext.DeleteRol(Rol.id);           
             }
             return Redirect("List");
         }
